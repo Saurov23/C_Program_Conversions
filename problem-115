@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int decimal;
+    char hex[20];
+
+    printf("Enter a hexadecimal number: ");
+    scanf("%s", hex);  // Read hexadecimal as string
+
+    sscanf(hex, "%x", &decimal);  // Convert hex string to decimal
+
+    printf("The decimal equivalent is: %d\n", decimal);
+
+    return 0;
+}
